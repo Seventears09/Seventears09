@@ -1,7 +1,7 @@
 Gui, Font, S11 CDefault, Verdana
 Gui, Add, Edit, x21 y69 w200 h30 vUser, username
 Gui, Add, Edit, x21 y149 w200 h30 vPass, password
-Gui, Add, Button, x71 y209 w100 h30 , login
+Gui, Add, Button, x71 y209 w100 h30 glogn, login
 Gui, Font, S28 CDefault, Verdana
 Gui, Add, Text, x51 y9 w140 h50 , Exploit
 ; Generated using SmartGUI Creator for SciTE
@@ -10,3 +10,18 @@ return
 
 GuiClose:
 ExitApp
+
+logn:
+gui, submit, nohide
+if User = Admin
+ Goto, pass
+if User = Hello
+ Goto, pass
+else
+ MsgBox, 262160, Error, Invalid username
+    return
+return
+
+pass:
+MsgBox, 262208, Success!, You are now logged in %User%
+return
