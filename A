@@ -1,0 +1,12 @@
+Gui, Font, S11 CDefault, Verdana
+Gui, Add, Edit, x21 y69 w200 h30 vUser, username
+Gui, Add, Edit, x21 y149 w200 h30 vPass, password
+Gui, Add, Button, x71 y209 w100 h30 , login
+Gui, Font, S28 CDefault, Verdana
+Gui, Add, Text, x51 y9 w140 h50 , Exploit
+; Generated using SmartGUI Creator for SciTE
+Gui, Show, w246 h264, Exploit |Login
+return
+
+GuiClose:
+ExitApp
